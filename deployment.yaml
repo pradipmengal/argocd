@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-docker-demo
+  labels:
+    app: node-docker-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-docker-demo
+  template:
+    metadata:
+      labels:
+        app: node-docker-demo
+    spec:
+      containers:
+        - name: node-docker-demo
+          image: pradipmengal/node-docker-demo
+          ports:
+            - containerPort: 3000
