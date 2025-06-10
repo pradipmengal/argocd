@@ -9,4 +9,5 @@ spec:
   ports:
     - port: 80
       targetPort: 3000
-      nodePort: 30001  # You can access this via Minikube at this port
+     # nodePort: 30001  # You can access this via Minikube at this port
+ type: NodePort
