@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: node-docker-demo-service
 spec:
-  type: NodePort
+  #type: NodePort
   selector:
     app: node-docker-demo
   ports:
