@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: node-docker-demo
-          image: pradipmengal/node-docker-demo
+          image: pradipmengal/node-docker-demo:v1
           ports:
             - containerPort: 3000
